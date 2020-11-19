@@ -1,0 +1,101 @@
+{
+  "versions": [
+    {
+      "name": "R13",
+      "export_this": true,
+      "layers": [
+        "vanilla_base",
+        "vanilla",
+        "vanilla_music"
+      ],
+      "copy_definitions": [
+        {
+          "name": "attachables",
+          "into": "RP"
+        }
+      ]
+    },
+    {
+      "name": "R14",
+      "export_this": true,
+      "layers": [
+        "vanilla_1.14"
+      ]
+    },
+    {
+      "name": "R15",
+      "export_this": true,
+      "layers": [
+        "vanilla_1.15"
+      ]
+    },
+    {
+      "name": "R16",
+      "export_this": true,
+      "layers": [
+        "vanilla_1.16"
+      ]
+    },
+    {
+      "name": "R16 Update 1",
+      "export_this": true,
+      "layers": [
+        "vanilla_1.16.100"
+      ]
+    },
+    {
+      "name": "Caves and Cliffs",
+      "export_this": true,
+      "layers": [
+        "experimental_caves_and_cliffs"
+      ]
+    }
+  ],
+  "merge_files": [
+    "biomes_client.json",
+    {
+      "path":"blocks.json",
+      "overwrite_keys": [
+        "format_version"
+      ]
+    },
+    "contents.json",
+    {
+      "path":"sounds.json",
+      "overwrite_keys": [
+        "volume",
+        "pitch"
+      ]
+    },
+    "splashes.json",
+    {
+      "path":"textures/item_texture.json",
+      "overwrite_keys": [
+        "textures"
+      ]
+    },
+    {
+      "path":"textures/terrain_texture.json",
+      "overwrite_keys": [
+        "textures"
+      ]
+    },
+    "textures/textures_list.json",
+    "textures/flipbook_textures.json",
+    {
+      "path":"sounds/sound_definitions.json",
+      "overwrite_keys": [
+        "volume",
+        "pitch",
+        "sounds"
+      ]
+    },
+    {
+      "path":"sounds/music_definitions.json",
+      "overwrite_keys": [
+        "volume",
+        "pitch"
+      ]
+    }
+  ]
+}
