@@ -30,7 +30,7 @@ e.g. `vanilla_1.15` refers to the 1.15 pack inside the appx.
     You may have multiple names in case a version consists of multiple packs. For example, the 1.13 resource pack slice is made up of `vanilla_base`, `vanilla` and `vanilla_music`.
     
     Note that this list of names applies for both the behavior pack and resource pack, though if a pack with a given name isn't found, it is ignored.
-* `should_export`: A boolean. If true, after this version's packs have been merged with the previous, its contents will be dumped into the output folder, containing all the files from past versions up to this version.
+* `export_this`: A boolean. If true, after this version's packs have been merged with the previous, its contents will be dumped into the output folder, containing all the files from past versions up to this version.
 * `name`: A string. The name of the folder this version should be exported into, if at all.
 * `copy_definitions`: An array of objects. If present, will include files from the definitions folder of the appx into the specified pack of this version. e.g. `attachables`, which are useful parts of a resource pack but are in definitions, instead of a slice's resource pack.
     * `name`: A string. The name of the folder inside definitions that will be copied into the pack.
