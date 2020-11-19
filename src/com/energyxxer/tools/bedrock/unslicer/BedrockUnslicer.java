@@ -60,7 +60,7 @@ public class BedrockUnslicer {
         centerPane.setLayout(new BoxLayout(centerPane, BoxLayout.Y_AXIS));
         centerPane.setOpaque(false);
 
-        appxChooser = createFileField(centerPane, "appx", "The .appx file used to install the Minecraft build", XFileField.OPEN_FILE);
+        appxChooser = createFileField(centerPane, "Minecraft Win 10 .appx", "The .appx file used to install the Minecraft build", XFileField.OPEN_FILE);
         configChooser = createFileField(centerPane, "Configuration File", "The .json file that determines how to merge the slices", XFileField.OPEN_FILE);
         outputChooser = createFileField(centerPane, "Output Folder", "The folder in which to place all the merged slices", XFileField.OPEN_DIRECTORY);
 
